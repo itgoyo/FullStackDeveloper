@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <meta http - equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Class写法</title>
+
+  <script src="./vue.js">
+
+  </script>
+
+  <style>
+    .red {
+      color: red;
+    }
+
+    .thin {
+      font-weight: 200;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .active {
+      letter-spacing: 0.5em;
+    }
+
+  </style>
+
+
+</head>
+<template>
+</template>
+
+<body>
+
+  <div id="app">
+
+
+    <h1 :class="demo">{{msg}}</h1>
+  </div>
+  <script>
+    var vm = new Vue({
+
+      el: '#app',
+
+      data: {
+        msg: '床前明月光，疑是地上霜',
+        demo: {
+          red: true
+        }
+      },
+
+      methods: {
+
+      },
+      components: {
+
+      }
+    })
+
+  </script>
+
+  <style>
+
+
+  </style>
+</body>
+
+
+</html>

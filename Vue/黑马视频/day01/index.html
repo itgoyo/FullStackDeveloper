@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>demo1</title>
+  <script src="./vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- v-bind:是vue中提供绑定属性的指令 -->
+    <input type="button" value="按钮" v-bind:title="mytitle" v-on:click="show">
+    <!-- v-bind可以简写为一个冒号（:） -->
+    <input type="button" value="按钮" :title="mytitle" @click="show">
+
+
+  </div>
+  <!-- <script src="/dist/build.js"></script> -->
+
+</body>
+
+<script>
+
+  var vm = new Vue({
+    el: '#app',
+    data: {
+      mytitle: '这个我的title哟'
+
+    },
+
+    methods: {
+      show: function () {
+        alert('hello world');
+      }
+    },
+  })
+
+</script>
+
+
+
+</html>
